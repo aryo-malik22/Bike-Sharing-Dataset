@@ -109,3 +109,70 @@ Contact
 =========================================
 	
 For further information about this dataset please contact Hadi Fanaee-T (hadi.fanaee@fe.up.pt)
+
+=========================================
+Overview
+=========================================
+The app allows users to:
+
+Filter the data based on season (Spring, Summer, Fall, Winter) and weather situation (Clear, Misty, Light Snow/Rain).
+Display the filtered data in a table format.
+Visualize the effect of weather and season on bike rental counts using boxplots.
+Derive insights from the data on how weather and season influence bike rental behavior.
+
+=========================================
+Features
+=========================================
+Filter Options: Users can select specific seasons and weather situations from the sidebar to filter the data.
+Data Visualizations: Boxplots show the impact of season and weather on the count of bike rentals.
+Insights: Concludes with observations on the data.
+
+=========================================
+Installations
+=========================================
+o get the project running locally, follow these steps:
+Clone the repository:
+git clone <repository_url>
+cd <project_directory>
+
+Install the necessary dependencies by creating a virtual environment and installing the required packages:
+pip install -r requirements.txt
+
+Make sure that requirements.txt contains the following:
+streamlit
+pandas
+seaborn
+matplotlib
+Download or place the day.csv file inside the project directory.
+
+=========================================
+Running the App
+=========================================
+After installing the dependencies and ensuring the day.csv file is in the correct directory, you can run the Streamlit app by using the following command:
+streamlit run streamlit_app.py
+
+Once the app is running, you can open it in your browser by going to the URL provided by Streamlit, typically:
+http://localhost:8501
+
+=========================================
+Usage
+=========================================
+Filter Data: Use the sidebar to filter data by season and weather situation. The available options are:
+Season: Spring (1), Summer (2), Fall (3), Winter (4).
+Weather Situation:
+1: Clear, Few clouds, Partly cloudy
+2: Mist + Cloudy, Mist + Broken clouds
+3: Light Snow, Light Rain
+
+Visualize Data: After selecting the filters, you will see two boxplots:
+Rental Count Distribution by Weather: Shows how different weather conditions affect the count of bike rentals.
+Rental Count Distribution by Season: Displays how bike rentals vary across seasons.
+
+Conclusion: The dashboard ends with key insights derived from the data, such as:
+Clear or mildly cloudy weather tends to increase the number of bike rentals.
+The number of rentals peaks during summer and fall.
+
+=========================================
+Conclusion
+=========================================
+This dashboard provides valuable insights into how weather and seasonality impact bike rentals. It allows users to interact with the data and explore these trends in an easy-to-use, visually appealing interface.
