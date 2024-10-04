@@ -9,7 +9,7 @@ st.title("Bike Sharing Dataset")
 
 @st.cache
 def load_data():
-    day_data = pd.read_csv(r'day.csv')
+    day_data = pd.read_csv(r'./dashboard/day.csv')
     return day_data
 
 data = load_data()
