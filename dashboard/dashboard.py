@@ -18,7 +18,7 @@ st.sidebar.title("Filter Options")
 
 season = st.sidebar.selectbox("Select Season", (1, 2, 3, 4), format_func=lambda x:{1: "Spring", 2: "Summer", 3: "Fall", 4: "Winter"}[x])
 
-weather = st.sidebar.selectbox("Selet Weather Situation", (1, 2, 3), format_func=lambda x: {
+weather = st.sidebar.selectbox("Select Weather Situation", (1, 2, 3), format_func=lambda x: {
     1: "Clear, Few clouds, Partly cloudy",
     2: "Mist + Cloudy, Mist + Broken clouds",
     3: "Light Snow, Light Rain"
